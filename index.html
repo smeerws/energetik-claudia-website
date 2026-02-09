@@ -1,11 +1,140 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <title>Test</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Energetik & Reiki – Claudia</title>
+  <meta name="description" content="Bodenständige energetische Begleitung. Reiki, Fernreiki und mehr. Unverbindliche Terminanfrage." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>GitHub Pages läuft</h1>
-  <p>Wenn du das siehst, ist alles richtig eingerichtet.</p>
+  <!-- Skip-Link für Screenreader & Tastatur -->
+  <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container">
+      <span class="brand">Energetik Claudia</span>
+
+      <nav aria-label="Hauptnavigation">
+        <a href="#ueber">Über mich</a>
+        <a href="#angebote">Angebote</a>
+        <a href="#reiki">Reiki</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="container">
+        <h1>Energetik &amp; Reiki – ruhige Begleitung für mehr Balance</h1>
+        <p class="lead">
+          Sanfte Energiearbeit, achtsam und ohne Druck.
+        </p>
+
+        <a href="#kontakt" class="button primary">Termin anfragen</a>
+      </div>
+    </section>
+
+    <!-- ÜBER MICH -->
+    <section id="ueber" class="section">
+      <div class="container">
+        <h2>Über mich</h2>
+        <p>
+          Ich bin Claudia …  
+          (Hier kommt später der Text zu Ausbildung, Weg und Haltung.)
+        </p>
+      </div>
+    </section>
+
+    <!-- ANGEBOTE -->
+    <section id="angebote" class="section">
+      <div class="container">
+        <h2>Meine Angebote</h2>
+
+        <ul class="list">
+          <li>
+            <h3>Reiki</h3>
+            <p>Sanfte Energiearbeit zur Entspannung.</p>
+          </li>
+          <li>
+            <h3>Fernreiki</h3>
+            <p>Energetische Begleitung aus der Distanz.</p>
+          </li>
+          <li>
+            <h3>Kinesiologie</h3>
+            <p>Unterstützende Arbeit zur Wahrnehmung von Stress.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WAS IST REIKI -->
+    <section id="reiki" class="section">
+      <div class="container">
+        <h2>Was ist Reiki?</h2>
+        <p>
+          Reiki ist eine sanfte Methode der Energiearbeit.  
+          Die Hände werden aufgelegt oder über den Körper gehalten.
+        </p>
+
+        <p class="hint">
+          Reiki ersetzt keine medizinische oder therapeutische Behandlung.
+        </p>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section">
+      <div class="container">
+        <h2>Kontakt &amp; Termin</h2>
+
+        <p>
+          Wenn du Fragen hast oder einen Termin anfragen möchtest,
+          melde dich gerne unverbindlich.
+        </p>
+
+        <form
+          action="https://formspree.io/f/XXXXYYYY"
+          method="POST"
+        >
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            E-Mail-Adresse
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Nachricht
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+
+          <button type="submit" class="button primary">
+            Anfrage senden
+          </button>
+        </form>
+
+        <p class="alt-contact">
+          Oder per E-Mail:  
+          <span id="email">claudia@example.at</span>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </footer>
 </body>
 </html>
